@@ -28,12 +28,11 @@ test
 faces(test[,-1],face.type = 1, main = "chernoff faces : face.type =1")
 
 # putting labels as face names : labels
-faces(test[,-1], face.type = 1, labels =  test$mkt_industry,
-               main = "putting labels as face names : labels = ")
 
 
 
-faces(test[,-1], face.type = 1, labels =  c("´ëÇüÁÖ", "ÁßÇüÁÖ", "¼ÒÇüÁÖ","¿¡³ÊÁö","¼ÒÀç", "»ê¾÷Àç","°æ±â¼ÒºñÀç", "ÇÊ¼ö¼ÒºñÀç","ÀÇ·á","±İÀ¶","IT","Åë½Å¼­ºñ½º","À¯Æ¿¸®Æ¼"),
+
+faces(test[,-1], face.type = 1, labels =  c("ëŒ€í˜•ì£¼", "ì¤‘í˜•ì£¼", "ì†Œí˜•ì£¼","ì—ë„ˆì§€","ì†Œì¬", "ì‚°ì—…ì¬","ê²½ê¸°ì†Œë¹„ì¬", "í•„ìˆ˜ì†Œë¹„ì¬","ì˜ë£Œ","ê¸ˆìœµ","IT","í†µì‹ ì„œë¹„ìŠ¤","ìœ í‹¸ë¦¬í‹°"),
       main = "putting labels as face names : labels = ")
 
 # Overlapping Chernoff faces over scatter plot  #
@@ -44,7 +43,7 @@ plot(test[,c("ytd_17", "foreigner")],  bty="n", # To make a plot with no box aro
 test_1_faces <- faces(test[,-1], scale = TRUE, plot=FALSE)
 
 
-plot.faces(test_1_faces,  test[,c("ytd_17")],  test[,c("foreigner")],  width = 3,  height = 7,labels =  c("´ëÇüÁÖ", "ÁßÇüÁÖ", "¼ÒÇüÁÖ","¿¡³ÊÁö","¼ÒÀç", "»ê¾÷Àç","°æ±â¼ÒºñÀç", "ÇÊ¼ö¼ÒºñÀç","ÀÇ·á","±İÀ¶","IT","Åë½Å¼­ºñ½º","À¯Æ¿¸®Æ¼"),
+plot.faces(test_1_faces,  test[,c("ytd_17")],  test[,c("foreigner")],  width = 3,  height = 7,labels =  c("ëŒ€í˜•ì£¼", "ì¤‘í˜•ì£¼", "ì†Œí˜•ì£¼","ì—ë„ˆì§€","ì†Œì¬", "ì‚°ì—…ì¬","ê²½ê¸°ì†Œë¹„ì¬", "í•„ìˆ˜ì†Œë¹„ì¬","ì˜ë£Œ","ê¸ˆìœµ","IT","í†µì‹ ì„œë¹„ìŠ¤","ìœ í‹¸ë¦¬í‹°"),
            main = "putting labels as face names : labels = ")
 
 
