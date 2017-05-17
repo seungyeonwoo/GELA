@@ -17,5 +17,5 @@ effect of variables:
  "height of nose  "  "com"          4월기관매매동향
  "width of nose   "  "num"          종목수
  "width of ear    "  "asset"        자산평균
- "height of ear   "  "debt_rate"    
+ "height of ear   "  "debt_rate"    부채비율
 > 
